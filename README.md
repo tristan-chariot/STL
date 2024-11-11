@@ -7,7 +7,7 @@
 Install [pixi], then run
 
 ```
-pixi read show
+pixi run read
 ```
 
 to have a look at the project aim and
