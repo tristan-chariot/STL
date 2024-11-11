@@ -339,26 +339,6 @@ def __(mo):
 
 
 @app.cell
-def __(make_STL, np, parse_obj):
-    def OBJ_to_STL(obj_filename, stl_filename):
-        vertices, indices = parse_obj(obj_filename)
-        faces = np.zeros((len(indices), 3, 3), dtype=np.float32)
-        for index, (i, j, k) in enumerate(indices):
-            faces[index] = [vertices[i - 1], vertices[j - 1], vertices[k - 1]]
-        stl = make_STL(faces)
-        with open(stl_filename, "tw") as file:
-            file.write(stl)
-    return (OBJ_to_STL,)
-
-
-@app.cell
-def __(OBJ_to_STL, show):
-    OBJ_to_STL("data/bunny.obj", "output/bunny.stl")
-    show("output/bunny.stl", scale=1.5)
-    return
-
-
-@app.cell
 def __(mo):
     mo.md(
         rf"""
