@@ -1,6 +1,6 @@
 # 3D Geometry File Formats
 
-![The STL teapot](images/teapot.stl)
+![The STL teapot](images/teapot.png)
 
 ## Quickstart
 
