@@ -25,5 +25,6 @@ mpl3d = { git = "https://github.com/rougier/matplotlib-3d.git" }
 sdf = { git = "https://github.com/fogleman/sdf.git" }
 
 [tasks]
-dev = "marimo edit notebook.py"
-show = "marimo run notebook.py"
+edit = "marimo edit notebook.py"
+read = "marimo run notebook.py"
+view = "python viewer.py"

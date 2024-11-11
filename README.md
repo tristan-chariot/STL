@@ -7,15 +7,25 @@
 Install [pixi], then run
 
 ```
-pixi run show
+pixi read show
 ```
 
-to have a look at the project roadmap and
+to have a look at the project aim and
 
 ```
-pixi run dev
+pixi run edit
 ```
 
 to start working on it.
+
+You can also use `pixi run view` to have a look at STL and OBJ files. 
+For example:
+
+```
+pixi run view data/teapot.stl
+```
+
+![images/teapot-pygfx.png]
+
 
 [pixi]: https://pixi.sh/dev/
