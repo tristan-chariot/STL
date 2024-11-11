@@ -1,0 +1,11 @@
+# Python
+__pycache__
+
+# pixi environments
+.pixi
+*.egg-info
+
+# Jupyter
+.ipynb_checkpoints
+.jupyter_ystore.db
+

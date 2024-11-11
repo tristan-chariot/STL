@@ -1,0 +1,29 @@
+[project]
+authors = ["Sébastien Boisgérault <Sebastien.Boisgerault@gmail.com>"]
+channels = ["conda-forge"]
+description = "STL"
+name = "STL-private"
+platforms = ["linux-64", "win-64", "osx-64", "osx-arm64"]
+version = "0.1.0"
+
+[dependencies]
+python = ">=3.12.5,<4"
+pip = ">=24.2,<25"
+meshio = ">=5.3.5,<6"
+autograd = ">=1.7.0,<2"
+numpy = ">=2.1.0,<3"
+matplotlib = ">=3.9.2,<4"
+jupyterlab = ">=4.1.8,<5"
+jupyterlab-myst = ">=2.4.2,<3"
+jupytercad = ">=2.0.2,<3"
+marimo = ">=0.9.11,<0.10"
+pygfx = ">=0.5.0,<0.6"
+trimesh = ">=4.5.2,<5"
+
+[pypi-dependencies]
+mpl3d = { git = "https://github.com/rougier/matplotlib-3d.git" }
+sdf = { git = "https://github.com/fogleman/sdf.git" }
+
+[tasks]
+dev = "marimo edit notebook.py"
+show = "marimo run notebook.py"
