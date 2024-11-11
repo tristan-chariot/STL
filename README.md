@@ -1,5 +1,7 @@
 # 3D Geometry File Formats
 
+![The STL teapot](images/teapot.stl)
+
 ## Quickstart
 
 Install [pixi], then run
