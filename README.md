@@ -25,7 +25,7 @@ For example:
 pixi run view data/teapot.stl
 ```
 
-![images/teapot-pygfx.png]
+![Pygfx teapot](images/teapot-pygfx.png)
 
 
 [pixi]: https://pixi.sh/dev/
