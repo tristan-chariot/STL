@@ -1,6 +1,6 @@
 # 3D Geometry File Formats
 
-![The STL teapot](images/teapot.png)
+![The STL teapot rendered with pygfx](images/teapot.png)
 
 ## Quickstart
 
@@ -24,8 +24,5 @@ For example:
 ```
 pixi run view data/teapot.stl
 ```
-
-![Pygfx teapot](images/teapot-pygfx.png)
-
 
 [pixi]: https://pixi.sh/dev/
