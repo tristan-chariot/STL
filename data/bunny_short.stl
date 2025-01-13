@@ -1,0 +1,72 @@
+solid bunny_short
+ 	 facet normal 1069.0 1647.0 1578.0
+ 	 	 outer loop
+ 	 	 	 vertex 0.0 0.0 -0.0034101800993084908
+ 	 	 	 vertex 0.0 1.0 0.13031956553459167
+ 	 	 	 vertex 0.0 2.0 0.021754369139671326
+ 	 	 endloop
+ 	 endfacet
+ 	 facet normal 1058.0 909.0 939.0
+ 	 	 outer loop
+ 	 	 	 vertex 1.0 0.0 -0.08171916007995605
+ 	 	 	 vertex 1.0 1.0 0.1525014489889145
+ 	 	 	 vertex 1.0 2.0 0.02965608984231949
+ 	 	 endloop
+ 	 endfacet
+ 	 facet normal 421.0 1176.0 238.0
+ 	 	 outer loop
+ 	 	 	 vertex 2.0 0.0 -0.030543480068445206
+ 	 	 	 vertex 2.0 1.0 0.1247788518667221
+ 	 	 	 vertex 2.0 2.0 0.0010983400279656053
+ 	 	 endloop
+ 	 endfacet
+ 	 facet normal 1055.0 1101.0 1042.0
+ 	 	 outer loop
+ 	 	 	 vertex 3.0 0.0 -0.02490158937871456
+ 	 	 	 vertex 3.0 1.0 0.11211138218641281
+ 	 	 	 vertex 3.0 2.0 0.03756023943424225
+ 	 	 endloop
+ 	 endfacet
+ 	 facet normal 238.0 1059.0 1126.0
+ 	 	 outer loop
+ 	 	 	 vertex 4.0 0.0 -0.018405679613351822
+ 	 	 	 vertex 4.0 1.0 0.17843055725097656
+ 	 	 	 vertex 4.0 2.0 -0.024219579994678497
+ 	 	 endloop
+ 	 endfacet
+ 	 facet normal 1254.0 30.0 1261.0
+ 	 	 outer loop
+ 	 	 	 vertex 5.0 0.0 0.01906793937087059
+ 	 	 	 vertex 5.0 1.0 0.12144924700260162
+ 	 	 	 vertex 5.0 2.0 0.03196844086050987
+ 	 	 endloop
+ 	 endfacet
+ 	 facet normal 1065.0 1071.0 1.0
+ 	 	 outer loop
+ 	 	 	 vertex 6.0 0.0 0.006041199900209904
+ 	 	 	 vertex 6.0 1.0 0.12494359165430069
+ 	 	 	 vertex 6.0 2.0 0.03265288844704628
+ 	 	 endloop
+ 	 endfacet
+ 	 facet normal 1037.0 1130.0 1120.0
+ 	 	 outer loop
+ 	 	 	 vertex 7.0 0.0 -0.013469030149281025
+ 	 	 	 vertex 7.0 1.0 0.16299355030059814
+ 	 	 	 vertex 7.0 2.0 -0.012000019662082195
+ 	 	 endloop
+ 	 endfacet
+ 	 facet normal 1570.0 2381.0 1585.0
+ 	 	 outer loop
+ 	 	 	 vertex 8.0 0.0 -0.03439323976635933
+ 	 	 	 vertex 8.0 1.0 0.1723668873310089
+ 	 	 	 vertex 8.0 2.0 -0.0009821299463510513
+ 	 	 endloop
+ 	 endfacet
+ 	 facet normal 2434.0 2502.0 2473.0
+ 	 	 outer loop
+ 	 	 	 vertex 9.0 0.0 -0.08431416004896164
+ 	 	 	 vertex 9.0 1.0 0.1095726266503334
+ 	 	 	 vertex 9.0 2.0 0.0037097299937158823
+ 	 	 endloop
+ 	 endfacet
+ endsolid bunny_short
