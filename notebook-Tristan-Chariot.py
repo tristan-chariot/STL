@@ -260,40 +260,38 @@ def __(mo):
     return
 
 
-app._unparsable_cell(
-    r"""
-    def make_STL(triangles, normals=None, name=\"\"):
-        STL_ASCII_description = \"\"
-        STL_ASCII_description += \"solid\"
-        STL_ASCII_description += \" \"+name
+@app.cell
+def __(np):
+    def make_STL(triangles, normals=None, name=""):
+        STL_ASCII_description = ""
+        STL_ASCII_description += "solid"
+        STL_ASCII_description += " "+name
         for t in range(len(triangles)):
-            STL_ASCII_description += \"\n \t facet normal\"
+            STL_ASCII_description += "\n \t facet normal"
             if normals[t] is not None:
                 for k in range(3):
-                    STL_ASCII_description += f\" {normals[t][k]}\"
+                    STL_ASCII_description += f" {normals[t][k]}"
             else: # on utilise la règle de la main doite
                 p0 = np.array([triangles[t][0][k] for k in range(3)])
                 p1 = np.array([triangles[t][1][k] for k in range(3)])
-                p2 = np.array([triangles[t][2[k] for k in range(3)])
+                p2 = np.array([triangles[t][2][k] for k in range(3)])
                 v1 = p1 - p0
                 v2 = p2 - p0
                 v_normal = np.cross(v1, v2)
                 v_normal = v_normal/np.linalg.norm(v_normal)
                 for k in range(3):
-                    STL_ASCII_description += f\" {v_normal[k]}\"
-            STL_ASCII_description += \"\n \t \t outer loop\" 
+                    STL_ASCII_description += f" {v_normal[k]}"
+            STL_ASCII_description += "\n \t \t outer loop" 
             for p in range(3):
-                STL_ASCII_description += \"\n \t \t \t vertex\"
+                STL_ASCII_description += "\n \t \t \t vertex"
                 for k in range(3):
-                    STL_ASCII_description += f\" {triangles[t][p][k]}\"
-            STL_ASCII_description += \"\n \t \t endloop\"
-            STL_ASCII_description += \"\n \t endfacet\"
-        STL_ASCII_description += \"\n endsolid\"
-        STL_ASCII_description += \" \"+name
+                    STL_ASCII_description += f" {triangles[t][p][k]}"
+            STL_ASCII_description += "\n \t \t endloop"
+            STL_ASCII_description += "\n \t endfacet"
+        STL_ASCII_description += "\n endsolid"
+        STL_ASCII_description += " "+name
         return STL_ASCII_description
-    """,
-    name="__"
-)
+    return (make_STL,)
 
 
 @app.cell
@@ -677,7 +675,7 @@ def __(obj_to_stl):
 
 @app.cell
 def __(mo, show):
-    mo.show_code(show("data/bunny.stl"))
+    mo.show_code(show("data/bunny.stl", scale="1.5"))
     # étrange bunny ne s'affiche pas
     return
 
